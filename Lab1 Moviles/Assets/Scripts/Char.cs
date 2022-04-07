@@ -25,18 +25,15 @@ public class Char : MonoBehaviour
         {
             this.GetComponent<SpriteRenderer>().sprite = right;
             Instantiate(slash, new Vector3(0.4f, 0, -1), this.transform.rotation);
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        } else if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             this.GetComponent<SpriteRenderer>().sprite = left;
             Instantiate(slash, new Vector3(-0.4f, 0, -1), this.transform.rotation);
-        }
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        } else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             this.GetComponent<SpriteRenderer>().sprite = up;
             Instantiate(slash, new Vector3(0, 0.3f, -1), this.transform.rotation);
-        }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        }else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             this.GetComponent<SpriteRenderer>().sprite = down;
             Instantiate(slash, new Vector3(0, -0.5f, -1), this.transform.rotation);

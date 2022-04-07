@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Slash : MonoBehaviour
 {
-    public int score;
     private maincontroller control;
     private void Awake()
     {

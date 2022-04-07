@@ -5,7 +5,9 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     //public float spawnRate = 0.25f;
-    public float spawnRate = 0.25f;
+    public float spawnRate_max = 3.0f;
+    public float spawnRate_min = 0.25f;
+    private float spawnRate;
     //public float timeBetweenWaves = 3.0f;
 
     public int enemyCount;
@@ -67,7 +69,7 @@ public class Spawner : MonoBehaviour
             //yield return new WaitForSeconds(spawnRate);
         }
 
-        spawnRate = Random.Range(0.5f, 3);
+        spawnRate = Random.Range(spawnRate_min, spawnRate_max);
         yield return new WaitForSeconds(spawnRate);
 
         waveIsDone = true;
