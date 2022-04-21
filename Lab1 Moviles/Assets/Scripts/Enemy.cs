@@ -29,5 +29,9 @@ public class Enemy : MonoBehaviour
         {
             this.transform.Translate(0, speed * Time.deltaTime, 0);
         }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

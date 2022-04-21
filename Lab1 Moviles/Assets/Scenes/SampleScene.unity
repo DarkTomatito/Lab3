@@ -1658,6 +1658,7 @@ MonoBehaviour:
   down: {fileID: 21300000, guid: 30bd61343aa6c4a4eaadf93d30810273, type: 3}
   left: {fileID: 21300000, guid: 52774a0d76e1e1941869c8a47bc95f2c, type: 3}
   right: {fileID: 21300000, guid: f013bad3c71c1f7498dbee16b51b7f06, type: 3}
+  state_text: {fileID: 952591045}
 --- !u!212 &2036498534
 SpriteRenderer:
   m_ObjectHideFlags: 0
